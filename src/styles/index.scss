@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html,
+body {
+  // overflow-x: hidden;
+  // background-color: aqua;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Barlow Condensed", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Inter', sans-serif !important;
+}
+
+// fonts
+.barlow {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.leading-100 {
+  line-height: 100%;
+}
+// header
+
+img{
+ width: 100% !important;
+}
+.headerWrapper {
+  .burgerMenu {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 639px) {
+      display: inline;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 25px;
+      height: 3px;
+      background-color: #ffff;
+      margin: 3px 0;
+      transition: 0.4s;
+    }
+  }
+
+  .change {
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 3px);
+      transform: rotate(-45deg) translate(-6px, 3px);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-4px, -4px);
+    }
+  }
+
+  .is-inactive {
+    display: inline-flex;
+  }
+}
+
+// universal
+.px-universal {
+  padding: 0 3%;
+}
+
+.pl-universal {
+  padding-left: 3%;
+}
+
+.menuContainer {
+  .bg-red,
+  .bg-white {
+    .pic {
+      border-color: #ff8cf0;
+    }
+  }
+  .bg-pink {
+    .pic {
+      border-color: #d71d24;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mainSlide {
+      //  margin-left: -20%;
+      .slick-current {
+        display: none !important;
+      }
+      // .slick-slide {
+      //   width: 200px;
+      // }
+    }
+
+    .navSlide {
+      .nameS{
+        display: none !important;
+      }
+      .slick-slider {
+        .pic {
+          border-color: #ffff;
+          .picS {
+            display: none;
+          }
+          .picL {
+            display: block;
+          }
+        }
+        
+      }
+    }
+    .textSlide {
+      .slick-slider {
+        .pic {
+          display: none;
+        }
+
+        .name {
+          display: block;
+        }
+
+        .description {
+          display: block;
+        }
+
+        .ingredient {
+          display: block;
+        }
+      }
+    }
+
+    .layout2Slide {
+      .slick-current {
+        .pic {
+          border-color: #ffff;
+        }
+        .name {
+          opacity: 1 !important;
+        }
+
+        .description {
+          opacity: 1 !important;
+        }
+
+        .ingredient {
+          opacity: 1 !important;
+        }
+      }
+
+      .slick-slider {
+        .name {
+          display: block;
+          opacity: 0;
+        }
+
+        .description {
+          display: block;
+          opacity: 0;
+        }
+
+        .ingredient {
+          display: block;
+          opacity: 0;
+        }
+      }
+    }
+
+    .layout3Slide {
+      .nameS{
+        display: none !important;
+      }
+      .slick-list{
+        overflow: visible;
+      }
+     
+      .slick-current {   
+        .name {
+         opacity: 1 !important;
+        display: block;
+        width: 200%;
+       margin-left: -50%;
+       white-space: nowrap;
+       text-align: center;
+        }
+        .stars{
+          display: flex
+        }
+
+      }
+
+      .textSlide3 {
+        .slick-slider {
+          .pic {
+           display: none;
+          }
+        }
+        .slick-current {   
+          .name {
+           opacity: 1 !important;
+          display: block;
+  width: 200%;
+          }
+  
+        }
+  
+      }
+
+    }
+  }
+}
+
+.bg-white {
+  .text {
+   h1, p{
+      color: #d71d24 !important;
+    }
+  }
+  .navSlide {
+    .slick-slider {
+      .pic {
+        border-color: #d71d24;
+      }
+    }
+  }
+}
+
+.mMenuItem{
+  .description{
+    line-height: 2 !important;
+  }
+
+}
+
+.slick-current {
+  .nameS{
+    display: none !important;
+  }
+}
+.leading1{
+  line-height: 1 !important;
+
+}
+
+.spin {
+  animation: spin 10s linear infinite forwards;
+}
+
+.layout3Slide {
+  .name{
+    display: none ;
+  }
+  .nameS{
+    display: none !important;
+  }
+
+       
+  .slick-current {   
+    .name {
+     opacity: 1 !important;
+    display: block;
+    width: 200%;
+   margin-left: -50%;
+   white-space: nowrap;
+   text-align: center;
+    }
+    .stars{
+      display: flex
+    }
+
+  }
+
+  .slick-slider {
+    .pic {
+      border: none;
+    }
+  }
+}
