@@ -41,19 +41,20 @@ const Story = () => {
   };
 
   return (
-    <section className="story relative " id="story">
-      <BackgroundImage
+    <section className="story relative bg-yellow " id="story">
+    
+        {/* <Header /> */}
+      {/* <BackgroundImage
         Tag="section"
         fluid={imageData}
         background-size="cover"
         opacity={0.5}
-        className="bgContainer relative   w-full pt-50"
+        className="bgContainer relative h-screen  w-full pt-50"
       >
-        <Header />
-        <div className=" w-1/4">
+        <div className=" absolute bottom-0 w-1/2">
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
-      </BackgroundImage>
+      </BackgroundImage> */}
       <StoryCraving />
       <StoryCrispy />
       <StoryCrunch />

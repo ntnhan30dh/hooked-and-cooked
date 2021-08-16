@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "yumza",
+    title: "hooked and cooked",
   },
   plugins: [
     "gatsby-plugin-sass",

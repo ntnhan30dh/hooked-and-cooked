@@ -11,7 +11,7 @@ const Header = (props) => {
   const link = " text-2xl sm:text-sm md:text-xl  font-bold flex  items-center w-max pl-0 sm:pl-8 py-2 xsm:py-2  sm:py-0 sm:pl-4 lg:pl-8"
   const span = "my-auto text-charcoal text-white uppercase hover:text-lipstick "
   return (
-    <header className="z-50 w-full py-4  sm:py-0 sticky top-0 bg-transparent  ">
+    <header className="z-50 w-full py-4  sm:py-0 sticky top-0 bg-transparent  /bg-yellow ">
       <nav className="nav flex justify-between items-center w-full flex-col sm:flex-row">
         <div className="left flex items-center  w-full md:max-w-max justify-between //p-4 ">
           <Link to="/" className=" w-28 md:w-32 lg:w-48 mr-8" >
