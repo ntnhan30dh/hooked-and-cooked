@@ -55,7 +55,7 @@ const Story = () => {
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
       </BackgroundImage> */}
-      <StoryCraving />
+      {/* <StoryCraving /> */}
       <StoryCrispy />
       <StoryCrunch />
     </section>
