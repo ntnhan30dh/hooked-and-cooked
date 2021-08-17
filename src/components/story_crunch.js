@@ -28,7 +28,7 @@ const StoryCrunch = () => {
         </div>
       </div>
       </div>
-      <div className="hidden md:block w-full pr-1/20 pt-1/20">
+      <div className="hidden md:block w-full pr-1/20 pt-1/20 ">
         <img src={pics} alt="pics" />
       </div>
       <div className="md:hidden w-full">

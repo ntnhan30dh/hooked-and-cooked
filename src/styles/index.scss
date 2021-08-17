@@ -41,7 +41,7 @@ img{
 }
 .headerWrapper {
   .burgerMenu {
-    display: none;
+   // display: none;
     cursor: pointer;
     @media screen and (max-width: 639px) {
       display: inline;

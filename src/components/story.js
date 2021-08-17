@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BackgroundImage from "gatsby-background-image";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -11,6 +11,12 @@ import StoryCrispy from "./story_crispy";
 import StoryCrunch from "./story_crunch";
 
 const Story = () => {
+
+  let [menuActive, setmenuActive] = useState(false);
+  const toggleMenu = () => {
+		setmenuActive(!menuActive)
+    }
+
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "story_bg.png" }) {
@@ -42,9 +48,8 @@ const Story = () => {
 
   return (
     <section className="story relative bg-yellow " id="story">
-    
-        {/* <Header /> */}
-      {/* <BackgroundImage
+    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
+      <BackgroundImage
         Tag="section"
         fluid={imageData}
         background-size="cover"
@@ -54,8 +59,8 @@ const Story = () => {
         <div className=" absolute bottom-0 w-1/2">
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
-      </BackgroundImage> */}
-      {/* <StoryCraving /> */}
+      </BackgroundImage>
+      <StoryCraving />
       <StoryCrispy />
       <StoryCrunch />
     </section>
