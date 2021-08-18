@@ -1,4 +1,5 @@
 import React from "react";
+import Plx from "react-plx";
 
 import tastThe from "../images/crunch_tastethe.png";
 import crunch from "../images/crunch_crunch.png";
@@ -8,6 +9,26 @@ import pics from "../images/crucnh_pics.png";
 import picsMobile from "../images/crucnh_picsMobile.png";
 
 const StoryCrunch = () => {
+
+  const parallaxScaleDown = [
+    {
+      start: "self",
+      duration: 500,
+      properties: [
+        {
+          startValue: 2,
+          endValue: 1,
+          property: "scale",
+        },
+        {
+          startValue: 35,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="crunch bg-blue p-1/10 ">
       <div className="top md:flex">
@@ -20,9 +41,12 @@ const StoryCrunch = () => {
           </div>
         </div>
       <div className="icons w-1/2 md:w-1/3 z-10 mt-1/5 md:mt-0 md:pl-1/10">
-        <div className=" w-full">
+      <Plx parallaxData={parallaxScaleDown} className=" w-full">
+      <img src={crunch_fishing} alt="crunch_fishing" />
+        </Plx>
+        {/* <div className=" w-full">
           <img src={crunch_fishing} alt="crunch_fishing" />
-        </div>
+        </div> */}
         <div className=" w-1/2 -mt-4">
           <img src={fish} alt="fish" />
         </div>

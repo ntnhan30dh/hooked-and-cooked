@@ -46,7 +46,7 @@ const IndexPage = () => {
     {/* <Menu/> */}
     {/* <Review/> */}
     <div id="followus"></div>
-    <Contact/>
+    {/* <Contact/> */}
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}
    

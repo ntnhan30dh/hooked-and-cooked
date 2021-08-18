@@ -1,4 +1,5 @@
 import React from "react";
+import Plx from "react-plx";
 
 import soo from "../images/soo.png";
 import crispy from "../images/crispy.png";
@@ -10,7 +11,26 @@ import crispyFries from "../images/crispyFries.png";
 import crispyIconsSetMobile from "../images/crispy_iconsSetMobile.png";
 
 const StoryCrispy = () => {
-  
+
+  const parallaxScaleDown = [
+    {
+      start: "self",
+      duration: 500,
+      properties: [
+        {
+          startValue: 2,
+          endValue: 1,
+          property: "scale",
+        },
+        {
+          startValue: 35,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+  ];
+
   return (
             <div className="crispy bg-yellow p-1/10 ">
               <div className="top flex">
@@ -30,12 +50,18 @@ const StoryCrispy = () => {
               </div>
               <div className="icons hidden md:block w-1/3  ">
               <div className="top flex justify-end">
-              <div className="  w-3/4">
+              <Plx parallaxData={parallaxScaleDown} className="  w-3/4">
+              <img
+                    src={crispyCacth}
+                    alt="crispyCacth"
+                  />
+        </Plx>
+              {/* <div className="  w-3/4">
                   <img
                     src={crispyCacth}
                     alt="crispyCacth"
                   />
-                </div>
+                </div> */}
                 <div className=" hidden md:block w-1/6">
                   <img
                     src={crispyDrink}
