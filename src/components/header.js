@@ -8,11 +8,11 @@ const Header = (props) => {
  
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
-  const link = " text-2xl sm:text-sm md:text-xl  font-bold w-full text-center py-6  "
+  const link = " text-base sm:text-sm md:text-xl  font-bold w-full text-center py-6  "
   const span = "my-auto text-charcoal text-blue uppercase hover:text-lipstick "
   return (
-    <header className="headerWrapper relative z-50 w-full py-4  sm:py-0 sticky top-0 bg-transparent  /bg-yellow ">
-      <nav className="nav /flex justify-between items-center w-full flex-col sm:flex-row">
+    <header className="headerWrapper relative z-50 w-full sticky top-0 bg-transparent  /bg-yellow ">
+      <nav className="nav /flex justify-between items-center w-full flex-col flex-row md:-mb-20">
         <div className="left w-28 md:w-32 lg:w-48">
           <Link to="/" className=" " >
             <img src={logo} alt="logo" />
@@ -43,7 +43,7 @@ const Header = (props) => {
         </div>
         <div  className={`burgerMenu  absolute top-6 right-6 ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
           <div class="bar1"></div>
-          <div class="bar2"></div>
+          {/* <div class="bar2"></div> */}
           <div class="bar3"></div>
         </div>
       </nav>

@@ -16,24 +16,61 @@ const StoryCrunch = () => {
       duration: 500,
       properties: [
         {
-          startValue: 35,
+          startValue: 100,
           endValue: 0,
           property: "translateX",
         },
       ],
     },
   ];
+  const parallaxOpacity = [
+    {
+      start: "self",
+      duration: 500,
+      properties: [
+        {
+          startValue: 0,
+        endValue: 1,
+        property: "scale"
+        },
+        {
+          startValue: -500,
+          endValue: 0,
+          property: "translateX"
+          },
+      ],
+    },
+  ];
 
+  const parallaxOpacity1 = [
+    {
+      start: 'self',
+      duration: 500,
+      properties: [
+        {
+          startValue: 0,
+        endValue: 1,
+        property: "scale"
+        },
+        {
+        startValue: 500,
+        endValue: 0,
+        property: "translateY"
+        },
+        
+      ],
+    },
+  ];
   return (
     <div className="crunch bg-blue p-1/10 ">
       <div className="top md:flex">
         <div className="text md:w-2/3 md:pr-1/10">
-          <div className=" w-4/5 mx-auto md:ml-0">
+          <Plx parallaxData={parallaxOpacity} className=" w-4/5 mx-auto md:ml-0">
             <img src={tastThe} alt="tastThe" />
-          </div>
-          <div className=" w-full -mt-2 md:-mt-4 md:ml-16">
+          </Plx>
+          <Plx parallaxData={parallaxOpacity1} className=" w-full -mt-2 md:-mt-4 md:ml-16">
             <img src={crunch} alt="crunch" />
-          </div>
+          </Plx>
         </div>
       <div className="icons w-1/2 md:w-1/3 z-10 mt-1/5 md:mt-0 md:pl-1/10">
       <Plx parallaxData={parallaxScaleDown} className=" w-full">

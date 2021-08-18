@@ -60,7 +60,7 @@ img{
   .change {
     .bar1 {
       -webkit-transform: rotate(-45deg) translate(-6px, 3px);
-      transform: rotate(-45deg) translate(-6px, 3px);
+      transform: rotate(-45deg) translate(0px, 3px);
     }
 
     .bar2 {
@@ -69,7 +69,7 @@ img{
 
     .bar3 {
       -webkit-transform: rotate(45deg) translate(-4px, -4px);
-      transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-1px, -4px);
     }
   }
 
