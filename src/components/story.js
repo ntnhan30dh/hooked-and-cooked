@@ -54,16 +54,16 @@ const Story = () => {
         fluid={imageData}
         background-size="cover"
         opacity={0.5}
-        className="bgContainer relative h-screen  w-full pt-50"
+        className="bgContainer relative h-70vh md:h-screen w-full pt-50"
       >
-        <div className=" absolute bottom-0 w-1/2">
+        <div className=" absolute bottom-1/10 left-1/10 w-2/3 md:w-1/2 lg:w-1/3">
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
       </BackgroundImage>
-      <div class="imageMarquee  h-16   "></div>
+      <div class="imageMarquee h-10 md:h-16   "></div>
       <StoryCraving />
       <StoryCrispy />
-      <div class="imageMarquee  h-20   "></div>
+      <div class="imageMarquee h-10 md:h-16   "></div>
       <StoryCrunch />
     </section>
   );

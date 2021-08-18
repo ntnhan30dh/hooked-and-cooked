@@ -39,6 +39,8 @@ module.exports = {
       height: {
         wFull: "100vw",
         '70vh': "70vh",
+        '80vh': "80vh",
+        '90vh': "90vh",
         '30vh': "30vh",
         '32': "34vw",
         '370': "370px",

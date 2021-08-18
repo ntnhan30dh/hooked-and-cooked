@@ -15,12 +15,7 @@ const StoryCraving = () => {
       duration: 500,
       properties: [
         {
-          startValue: 2,
-          endValue: 1,
-          property: "scale",
-        },
-        {
-          startValue: 35,
+          startValue: 100,
           endValue: 0,
           property: "translateY",
         },

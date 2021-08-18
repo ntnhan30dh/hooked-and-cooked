@@ -51,7 +51,7 @@ img{
     .bar3 {
       width: 25px;
       height: 3px;
-      background-color: #ffff;
+      background-color: #272CC0;
       margin: 3px 0;
       transition: 0.4s;
     }
@@ -152,4 +152,8 @@ img{
    }
  }
 
- 
+ .header_rightDiv{
+  background: url(../images/header_bg.png) ;
+  background-position: 0 0;
+  background-size: cover;
+ }
