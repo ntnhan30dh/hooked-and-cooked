@@ -87,174 +87,12 @@ img{
   padding-left: 3%;
 }
 
-.menuContainer {
-  .bg-red,
-  .bg-white {
-    .pic {
-      border-color: #ff8cf0;
-    }
-  }
-  .bg-pink {
-    .pic {
-      border-color: #d71d24;
-    }
-  }
 
-  @media only screen and (min-width: 768px) {
-    .mainSlide {
-      //  margin-left: -20%;
-      .slick-current {
-        display: none !important;
-      }
-      // .slick-slide {
-      //   width: 200px;
-      // }
-    }
 
-    .navSlide {
-      .nameS{
-        display: none !important;
-      }
-      .slick-slider {
-        .pic {
-          border-color: #ffff;
-          .picS {
-            display: none;
-          }
-          .picL {
-            display: block;
-          }
-        }
-        
-      }
-    }
-    .textSlide {
-      .slick-slider {
-        .pic {
-          display: none;
-        }
 
-        .name {
-          display: block;
-        }
 
-        .description {
-          display: block;
-        }
 
-        .ingredient {
-          display: block;
-        }
-      }
-    }
 
-    .layout2Slide {
-      .slick-current {
-        .pic {
-          border-color: #ffff;
-        }
-        .name {
-          opacity: 1 !important;
-        }
-
-        .description {
-          opacity: 1 !important;
-        }
-
-        .ingredient {
-          opacity: 1 !important;
-        }
-      }
-
-      .slick-slider {
-        .name {
-          display: block;
-          opacity: 0;
-        }
-
-        .description {
-          display: block;
-          opacity: 0;
-        }
-
-        .ingredient {
-          display: block;
-          opacity: 0;
-        }
-      }
-    }
-
-    .layout3Slide {
-      .nameS{
-        display: none !important;
-      }
-      .slick-list{
-        overflow: visible;
-      }
-     
-      .slick-current {   
-        .name {
-         opacity: 1 !important;
-        display: block;
-        width: 200%;
-       margin-left: -50%;
-       white-space: nowrap;
-       text-align: center;
-        }
-        .stars{
-          display: flex
-        }
-
-      }
-
-      .textSlide3 {
-        .slick-slider {
-          .pic {
-           display: none;
-          }
-        }
-        .slick-current {   
-          .name {
-           opacity: 1 !important;
-          display: block;
-  width: 200%;
-          }
-  
-        }
-  
-      }
-
-    }
-  }
-}
-
-.bg-white {
-  .text {
-   h1, p{
-      color: #d71d24 !important;
-    }
-  }
-  .navSlide {
-    .slick-slider {
-      .pic {
-        border-color: #d71d24;
-      }
-    }
-  }
-}
-
-.mMenuItem{
-  .description{
-    line-height: 2 !important;
-  }
-
-}
-
-.slick-current {
-  .nameS{
-    display: none !important;
-  }
-}
 .leading1{
   line-height: 1 !important;
 
@@ -294,3 +132,24 @@ img{
     }
   }
 }
+
+.imageMarquee {
+ width: 100%;
+   background: url(../images/wave5.png) repeat-x 0 / 100% auto;
+   animation: ani 10s linear infinite;
+  //  background-position: 20px 20px;
+  //  background-size: cover;
+   
+   
+ }
+
+ @keyframes ani {
+   0% {
+     background-position:0 0;
+   }
+   100% {
+     background-position: 100vw 0;
+   }
+ }
+
+ 

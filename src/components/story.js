@@ -60,8 +60,10 @@ const Story = () => {
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
       </BackgroundImage>
+      <div class="imageMarquee  h-16   "></div>
       <StoryCraving />
       <StoryCrispy />
+      <div class="imageMarquee  h-20   "></div>
       <StoryCrunch />
     </section>
   );
