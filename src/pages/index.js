@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
-import Review from "../components/review"
+
 import Contact from "../components/contact"
 
 
@@ -43,8 +43,8 @@ const IndexPage = () => {
     {/* <Header toggleMenu={toggleMenu} menuState={menuActive}/> */}
     
     <Story/>
-    {/* <Menu/> */}
-    {/* <Review/> */}
+    <Menu/>
+    
     <div id="followus"></div>
     {/* <Contact/> */}
 

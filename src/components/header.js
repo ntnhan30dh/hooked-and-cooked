@@ -1,6 +1,5 @@
 import React, { useState }   from "react"
 import logo from "../images/logo.png"
-import orderNow from "../images/orderNow_pink.png"
 import { Link } from "gatsby"
 import Contact from './contact'
 
