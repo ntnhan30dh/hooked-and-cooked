@@ -51,7 +51,7 @@ const Slick = (props) => {
     ],
   };
 const btnStyle = 'absolute  z-10 h-full flex flex flex-col justify-center'
-const arrowStyle = 'w-4 xsm:w-8 lg:w-12 '
+const arrowStyle = 'w-4 xsm:w-6 lg:w-8 '
  
  return (
     <div className={`relative sliderContainer  w-full `}>
