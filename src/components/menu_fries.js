@@ -15,7 +15,7 @@ import lemons from "../images/menuCombos_lemons.png";
 
 
 
-const Combos = () => {
+const Fries = () => {
 
   const parallaxRotate = [
     {
@@ -33,7 +33,7 @@ const Combos = () => {
   
   return (
       <div className="relative  ">
-      <MenuTitle title="COMBOS" reverse="flex-row-reverse"/>
+      <MenuTitle title="Sides" reverse="flex-row"/>
       <div className="slickWrap md:w-1/2 md:ml-1/10">
       <Slick >
         <MenuItem  pic="combos1"  />
@@ -57,13 +57,13 @@ const Combos = () => {
         <div  className=" hidden md:block absolute top-1/2 left-0 w-1/4">
           <img src={lemons} alt="lemons" />
         </div>
-        <Plx parallaxData={parallaxRotate} className=" absolute top-2/3 md:top-2/3 lg:top-3/4 -left-1/10  md:left-1/3 w-1/4 lg:w-1/6">
+        <Plx parallaxData={parallaxRotate} className=" absolute top-2/3 md:top-2/3 lg:top-3/4 -left-1/10  md:left-1/3 w-1/4 lg:w-1/5">
           <img src={lemonSlide} alt="lemonSlide" />
         </Plx>
         <Plx parallaxData={parallaxRotate} className=" absolute top-0 md:top-1/10 right-0 /md:-right-1/10 w-1/3">
           <img src={olive} alt="olive" />
         </Plx>
-        <div className=" absolute bottom-0 md:-bottom-1/10 lg:bottom-0 right-0 w-1/2 lg:w-2/5">
+        <div className=" absolute bottom-0 md:-bottom-1/10 right-0 w-1/2 lg:w-2/5">
           <img src={tomato} alt="tomato" className="" />
         </div>
       </div>
@@ -72,4 +72,4 @@ const Combos = () => {
   );
 };
 
-export default Combos;
+export default Fries;
