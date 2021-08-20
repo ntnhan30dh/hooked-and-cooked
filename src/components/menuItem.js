@@ -79,9 +79,8 @@ const MenuItem = (props) => {
  
 
   return (
-    <div className="mMenuItem relative px-1 md:px-2 xl:px-3 ">   
+    <div className="mMenuItem relative px-16 ">   
     <Img className="w-full " fluid={pic(props.pic)} />
-    <h1>hi</h1>
     </div>
   );
 };

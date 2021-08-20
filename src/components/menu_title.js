@@ -26,7 +26,7 @@ const MenuTitle = (props) => {
      
       <div  className={`title relative w-full  text-center md:text-left md:flex items-center ${props.reverse}`}>
       <Plx parallaxData={parallaxScaleDown} className="bg-blue uppercase text-yellow font-bold text-sm md:text-lg lg:text-xl py-1 md:w-1/3 xl:w-1/4 md:-mb-4 md:pl-6"> {props.title} </Plx>
-      <div className=" absolute top-0 right-10 h-full flex flex-col justify-center">
+      <div className=" absolute -top-6 md:top-0 right-10 md:h-full flex flex-col justify-center">
      <div className="w-16 md:w-24">
           <img src={fries} alt="fries" />
      </div>
