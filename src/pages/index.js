@@ -5,11 +5,11 @@ import '../styles/global.css';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import Header from "../components/header"
+// import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
 
-import Contact from "../components/contact"
+// import Contact from "../components/contact"
 
 
 // const codeStyles = {
