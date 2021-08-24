@@ -2,7 +2,7 @@ import React from "react";
 import Plx from "react-plx"
 
 import MenuTitle from "./menu_title";
-import Slick from "./Slick";
+import Slick from "./slick";
 import MenuItem from "./menuItem";
 
 import line from "../images/menuCombos_lineFish.svg";
