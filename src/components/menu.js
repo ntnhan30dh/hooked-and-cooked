@@ -5,7 +5,7 @@ import icons from "../images/menu_shrimpFries.png";
 import arrow from "../images/menu_doubleArrows.png";
 
 import Combos from "./menu_combos";
-import Fries from "./menu_fries";
+import Fries from "./menu_sides";
 
 const Menu = () => {
   return (
@@ -32,7 +32,7 @@ const Menu = () => {
         </div>
       </div>
       <Combos/>
-      {/* <Fries/> */}
+      <Fries/>
     </section>
   );
 };

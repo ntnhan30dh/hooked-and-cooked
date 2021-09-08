@@ -12,6 +12,13 @@ const MenuItem = (props) => {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
+      }
+      sides1: file(relativePath: { eq: "menuSides_pic1.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
       }    
     }
   `);
@@ -21,8 +28,8 @@ const MenuItem = (props) => {
       // starters
       case "combos1":
         return data.combos1.childImageSharp.fluid;
-      case "RiceAndShine":
-      //   return data.RiceAndShine.childImageSharp.fluid;
+      case "sides1":
+         return data.sides1.childImageSharp.fluid;
       // case "AsianLoveStorySalad":
       //   return data.AsianLoveStorySalad.childImageSharp.fluid;
       // case "Etamame":
