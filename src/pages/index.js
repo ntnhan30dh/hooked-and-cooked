@@ -8,8 +8,7 @@ import "slick-carousel/slick/slick-theme.css"
 // import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
-
-// import Contact from "../components/contact"
+import FollowUs from "../components/followus"
 
 
 // const codeStyles = {
@@ -46,7 +45,7 @@ const IndexPage = () => {
     <Menu/>
     
     <div id="followus"></div>
-    {/* <Contact/> */}
+    <FollowUs/>
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}
    

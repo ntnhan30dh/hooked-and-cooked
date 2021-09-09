@@ -1,7 +1,6 @@
 import React, { useState }   from "react"
 import logo from "../images/logo.png"
 import { Link } from "gatsby"
-import Contact from './contact'
 
 const Header = (props) => {
  
