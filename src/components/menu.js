@@ -6,6 +6,7 @@ import arrow from "../images/menu_doubleArrows.png";
 
 import Combos from "./menu_combos";
 import Fries from "./menu_sides";
+import Drinks from "./menu_drinks";
 
 const Menu = () => {
   return (
@@ -33,6 +34,7 @@ const Menu = () => {
       </div>
       <Combos/>
       <Fries/>
+      <Drinks/>
     </section>
   );
 };

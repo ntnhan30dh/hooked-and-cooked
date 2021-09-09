@@ -36,11 +36,10 @@ const Combos = () => {
       <MenuTitle title="COMBOS" reverse="flex-row-reverse"/>
       <div className="slickWrap md:w-1/2 md:ml-1/10">
       <Slick >
-        <MenuItem  pic="combos1"  />
+        <MenuItem  pic="combos1" name="CAPTAIN CHOICE"  />
         <MenuItem
           pic="TryThemAll"
           name="Try them all"
-          description="Cannot decide which type of gyoza? Well, try them all! In this combo you get: 3 Mandu, 3 Shrimps, 3 Chicken, 3 Tofu with topping of your choice."
         />
       </Slick>
       </div>

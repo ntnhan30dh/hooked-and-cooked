@@ -19,7 +19,14 @@ const MenuItem = (props) => {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-      }    
+      } 
+      drinks1: file(relativePath: { eq: "menuDrinks_cola.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }   
     }
   `);
 
@@ -30,8 +37,8 @@ const MenuItem = (props) => {
         return data.combos1.childImageSharp.fluid;
       case "sides1":
          return data.sides1.childImageSharp.fluid;
-      // case "AsianLoveStorySalad":
-      //   return data.AsianLoveStorySalad.childImageSharp.fluid;
+      case "drinks1":
+        return data.drinks1.childImageSharp.fluid;
       // case "Etamame":
       //   return data.Etamame.childImageSharp.fluid;
       // case "Kimchichi":
