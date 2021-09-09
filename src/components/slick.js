@@ -50,24 +50,29 @@ const Slick = (props) => {
       },
     ],
   };
-const btnStyle = 'absolute  z-10 h-full flex flex flex-col justify-center'
-const arrowStyle = 'w-4 xsm:w-6 lg:w-8 '
- 
- return (
-    <div className={`relative sliderContainer  w-full `}>
-      <button onClick={() => gotoNext()} className={`right-3 ${btnStyle}`}>
+  const btnStyle = "absolute  z-10 h-full flex flex flex-col justify-center";
+  const arrowStyle = "w-4 xsm:w-6 lg:w-8 mt-12 md:mt-20  ";
+
+  return (
+    <div className={`relative sliderContainer  w-full /md:-mt-10`}>
+      <button onClick={() => gotoNext()} className={`right-3 md:right-0 ${btnStyle}`}>
         <div className={arrowStyle}>
           <img src={btnNext} alt="next" />
         </div>
       </button>
 
-      <button onClick={() => gotoPrev()} className={` left-3 ${btnStyle} `}>
+      <button onClick={() => gotoPrev()} className={` left-3 md:left-0 ${btnStyle} `}>
         <div className={arrowStyle}>
           <img src={btnPrev} alt="prev" />
         </div>
       </button>
       <Slider {...settings} ref={customeSlider} className={` w-full`}>
-        {props.children}
+        {/* {React.Children.map(props.children, child => {
+            return React.cloneElement(child, {
+              next: gotoNext})   
+         })} */}
+
+      {props.children}
       </Slider>
     </div>
   );

@@ -34,7 +34,7 @@ const Combos = () => {
   return (
       <div className="relative  ">
       <MenuTitle title="COMBOS" reverse="flex-row-reverse"/>
-      <div className="slickWrap md:w-1/2 md:ml-1/10">
+      <div className="slickWrapMobile md:hidden mt-6">
       <Slick >
         <MenuItem  pic="combos1" name="CAPTAIN CHOICE"  />
         <MenuItem
@@ -43,7 +43,18 @@ const Combos = () => {
         />
       </Slick>
       </div>
-      <div className="picsDiv relative overflow-hidden md:-mt-1/4">
+      <div className="picsDiv relative  md:mt-16 mb-10">
+
+      <div className="slickWrap hidden md:block absolute w-1/2 /xl:w-1/3 -top-28 left-1/10">
+      <Slick >
+        <MenuItem  pic="combos1" name="CAPTAIN CHOICE"  />
+        <MenuItem
+          pic="TryThemAll"
+          name="Try them all"
+        />
+      </Slick>
+      </div>
+      
       <div className=" hidden md:block w-3/4 mx-auto">
           <img src={line} alt="line" />
         </div>
@@ -62,7 +73,7 @@ const Combos = () => {
         <Plx parallaxData={parallaxRotate} className=" absolute top-0 md:top-1/10 right-0 /md:-right-1/10 w-1/3">
           <img src={olive} alt="olive" />
         </Plx>
-        <div className=" absolute bottom-0 md:-bottom-1/10 lg:bottom-0 right-0 w-1/2 lg:w-2/5">
+        <div className=" absolute bottom-0 md:-bottom-1/10 lg:bottom-0 right-0 w-1/2 md:pb-4 lg:w-2/5">
           <img src={tomato} alt="tomato" className="" />
         </div>
       </div>

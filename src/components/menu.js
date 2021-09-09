@@ -10,7 +10,7 @@ import Drinks from "./menu_drinks";
 
 const Menu = () => {
   return (
-    <section className="  relative menuContainer w-full  bg-yellow">
+    <section className="overflow-hidden   relative menuContainer w-full  bg-yellow">
       <div className="topText p-1/10 lg:p-1/20">
       <div className="top md:flex justify-center">
         <div className=" w-full md:w-1/2 lg:w-1/2 ">

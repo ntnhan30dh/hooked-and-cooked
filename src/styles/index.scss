@@ -23,6 +23,15 @@ textarea {
 }
 
 // fonts
+
+@font-face {
+  font-family: 'Furious';
+  src: local('Furious'), url(../fonts/FuriousStyles.ttf) format('truetype');
+}
+
+.furious{
+  font-family: 'Furious', sans-serif  !important;
+}
 .barlow {
   font-family: 'Inter', sans-serif !important;
 }
@@ -156,4 +165,19 @@ img{
   background: url(../images/header_bg.png) ;
   background-position: 0 0;
   background-size: cover;
+ }
+
+ .menuItemName{
+   color: #272CC0;
+   font-size: 30px;
+text-shadow: 0px 2px 0px #FFFFFF;
+   @media screen and (min-width: 768px) {
+     font-size: 54px;
+     text-shadow: 2px 3px 0px #FFFFFF; 
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 67px;
+    text-shadow: 3px 4px 0px #FFFFFF; 
+ }
  }

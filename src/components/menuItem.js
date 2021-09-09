@@ -91,9 +91,9 @@ const MenuItem = (props) => {
     }
   };
  
-
   return (
     <div className="mMenuItem relative px-16 md:px-10 lg:px-16 ">   
+      <h1 className="menuItemName text-center furious pb-6 ">{props.name}</h1>
     <Img className="w-full " fluid={pic(props.pic)} />
     </div>
   );
