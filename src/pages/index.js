@@ -5,7 +5,7 @@ import '../styles/global.css';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-// import Header from "../components/header"
+import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
 import FollowUs from "../components/followus"
@@ -38,13 +38,14 @@ const IndexPage = () => {
   //   }
   // `)
   return (
-    <div className="pageWrapper">
-    {/* <Header toggleMenu={toggleMenu} menuState={menuActive}/> */}
-    
+    <div className="pageWrapper bg-yellow">
+    <head>
+      <title>Hooked and Cooked</title>
+      </head>
+    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
+   
     <Story/>
     <Menu/>
-    
-    <div id="followus"></div>
     <FollowUs/>
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}

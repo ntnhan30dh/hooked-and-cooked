@@ -39,7 +39,7 @@ const Header = (props) => {
           </Link>
        </div>
         </div>
-        <div  className={`burgerMenu  absolute top-6 right-6 ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
+        <div  className={`burgerMenu  absolute top-6 right-6 z-50 ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
           <div class="bar1"></div>
           {/* <div class="bar2"></div> */}
           <div class="bar3"></div>

@@ -47,8 +47,8 @@ const Story = () => {
   };
 
   return (
-    <section className="story relative bg-yellow " id="story">
-    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
+    <section className="story relative bg-yellow " >
+    {/* <Header toggleMenu={toggleMenu} menuState={menuActive}/> */}
       <BackgroundImage
         Tag="section"
         fluid={imageData}
@@ -60,7 +60,7 @@ const Story = () => {
           <img src={thePerfectCacth} alt="thePerfectCacth" />
         </div>
       </BackgroundImage>
-      <div class="imageMarquee h-10 md:h-16   "></div>
+      <div class="imageMarquee h-10 md:h-16" id="story"></div>
       <StoryCraving />
       <StoryCrispy />
       <div class="imageMarquee h-10 md:h-16   "></div>
