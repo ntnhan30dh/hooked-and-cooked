@@ -30,7 +30,7 @@ module.exports = {
         yellow: "#fdd040",
         orange: "##E5E5E5",
         skin: "#ffeed8",
-        blue: "#272CC0",
+        blue: "#2b28c1",
       },
       lineHeight: {
         "extra-loose": "2.5",

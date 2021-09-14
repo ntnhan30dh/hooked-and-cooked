@@ -5,7 +5,8 @@ import MenuTitle from "./menu_title";
 import Slick from "./slick";
 import MenuItem from "./menuItem";
 
-import line from "../images/menuDrinks_lineFish.svg";
+// import line from "../images/menuDrinks_lineFish.svg";
+import LineDrinks from "../components/line_drinks";
 import lineMobile from "../images/menuDrinks_lineMobile.svg";
 import sauceRed from "../images/menuSides_sauceRed.png";
 import limes from "../images/menuDrinks_limes.png";
@@ -53,7 +54,8 @@ const Drinks = () => {
       </Slick>
       </div>
       <div className=" hidden md:block w-1/3 ml-1/2">
-          <img src={line} alt="line" />
+          {/* <img src={line} alt="line" /> */}
+          <LineDrinks/>
         </div>
         <div className=" w-3/4 mx-auto md:hidden">
           <img src={lineMobile} alt="lineMobile" />

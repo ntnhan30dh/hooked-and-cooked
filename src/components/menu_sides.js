@@ -5,7 +5,8 @@ import MenuTitle from "./menu_title";
 import Slick from "./slick";
 import MenuItem from "./menuItem";
 
-import line from "../images/menuSides_lineFish.svg";
+//import line from "../images/menuSides_lineFish.svg";
+import LineSlides from "../components/line_sides";
 import lineMobile from "../images/menuSides_lineMobile.svg";
 import chili from "../images/menuSides_chili.png";
 import chiliMobile from "../images/menuSides_chiliMobile.png";
@@ -50,7 +51,9 @@ const Sides = () => {
           </Slick>
         </div>
         <div className=" hidden md:block w-3/4 mx-auto">
-          <img src={line} alt="line" />
+          {/* <img src={line} alt="line" /> */}
+         <LineSlides/>
+
         </div>
         <div className=" w-3/4 mx-auto md:hidden">
           <img src={lineMobile} alt="lineMobile" />

@@ -5,7 +5,8 @@ import MenuTitle from "./menu_title";
 import Slick from "./slick";
 import MenuItem from "./menuItem";
 
-import line from "../images/menuCombos_lineFish.svg";
+// import line from "../images/menuCombos_lineFish.svg";
+import LineCombos from "../components/line_combos";
 import lineMobile from "../images/menuCombos_lineMobile.svg";
 import salt from "../images/menuCombos_salt.png";
 import olive from "../images/menuCombos_olive2.png";
@@ -56,7 +57,8 @@ const Combos = () => {
       </div>
       
       <div className=" hidden md:block w-3/4 mx-auto">
-          <img src={line} alt="line" />
+          {/* <img src={line} alt="line" /> */}
+          <LineCombos/>
         </div>
         <div className=" w-3/4 mx-auto md:hidden">
           <img src={lineMobile} alt="lineMobile" />

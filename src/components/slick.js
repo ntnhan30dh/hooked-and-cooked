@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 import btnNext from "../images/menu_btnNext.png";
 import btnPrev from "../images/menu_btnPrev.png";
