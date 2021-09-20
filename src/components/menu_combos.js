@@ -37,10 +37,24 @@ const Combos = () => {
       <MenuTitle title="COMBOS" reverse="flex-row-reverse"/>
       <div className="slickWrapMobile md:hidden mt-6">
       <Slick >
-        <MenuItem  pic="combos1" name="CAPTAIN CHOICE"  />
+      <MenuItem
+          pic="combosClassicCalamariChips"
+          name="Classic Calamari Chips"
+        />
         <MenuItem
-          pic="TryThemAll"
-          name="Try them all"
+          pic="combosSpicyFishChips"
+          name="Spicy Fish Chips"
+        /> <MenuItem
+          pic="combosSpicyCalamariChips"
+          name="Spicy Calamari Chips"
+        /> <MenuItem
+          pic="combosCaptainsChoice"
+          name=" Captain Choice"
+        />
+
+       <MenuItem
+          pic="combosChiefMatesChoice"
+          name=" Chief Mate Choice"
         />
       </Slick>
       </div>
@@ -48,10 +62,25 @@ const Combos = () => {
 
       <div className="slickWrap hidden md:block absolute w-1/2 /xl:w-1/3 -top-28 left-1/10">
       <Slick >
-        <MenuItem  pic="combos1" name="CAPTAIN CHOICE"  />
+      <MenuItem  pic="combosClassicFishChips" name="Classic Fish Chips"  />
         <MenuItem
-          pic="TryThemAll"
-          name="Try them all"
+          pic="combosClassicCalamariChips"
+          name="Classic Calamari Chips"
+        />
+        <MenuItem
+          pic="combosSpicyFishChips"
+          name="Spicy Fish Chips"
+        /> <MenuItem
+          pic="combosSpicyCalamariChips"
+          name="Spicy Calamari Chips"
+        /> <MenuItem
+          pic="combosCaptainsChoice"
+          name=" Captain Choice"
+        />
+
+       <MenuItem
+          pic="combosChiefMatesChoice"
+          name=" Chief Mate Choice"
         />
       </Slick>
       </div>

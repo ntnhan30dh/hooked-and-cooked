@@ -46,8 +46,10 @@ const Sides = () => {
 
       <div className="slickWrap hidden md:block absolute -top-28 w-1/2 lg:w-1/3 right-1/10 lg:right-1/5 ">
           <Slick>
-            <MenuItem pic="sides1" name="FRIES" />
-            <MenuItem pic="sides1" name="FRIES" />
+            <MenuItem pic="sidesFries" name="FRIES" />
+            <MenuItem pic="sidesColeslaw" name="Coleslaw" />
+            <MenuItem pic="sidesRise" name="Rise" />
+            <MenuItem pic="sidesGarlicMayo" name="Garlic Mayo" />
           </Slick>
         </div>
         <div className=" hidden md:block w-3/4 mx-auto">
