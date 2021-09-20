@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Header = (props) => {
  
   let menuActive = props.menuState ? "is-inactive" : ""
-  let change = props.menuState ? "change" : ""
+  let change = props.menuState ? "change bg-blue p-2 pr-3" : ""
   const link = " text-base sm:text-sm md:text-xl  font-bold w-full text-center py-6  "
   const span = "my-auto text-charcoal text-blue uppercase hover:text-lipstick "
   return (
@@ -43,6 +43,7 @@ const Header = (props) => {
           <div class="bar1"></div>
           {/* <div class="bar2"></div> */}
           <div class="bar3"></div>
+          
         </div>
       </nav>
     </header>

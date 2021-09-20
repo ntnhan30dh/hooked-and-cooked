@@ -51,6 +51,8 @@ img{
 .headerWrapper {
   .burgerMenu {
    // display: none;
+  // background-color: #FDD040;
+
     cursor: pointer;
     @media screen and (max-width: 639px) {
       display: inline;
@@ -62,9 +64,11 @@ img{
       height: 3px;
      // background-color: #272CC0;
       background-color: #FFFFFF;
+   //  border: 1px solid #FDD040;
       margin: 3px 0;
       transition: 0.4s;
     }
+    
   }
 
   .change {
