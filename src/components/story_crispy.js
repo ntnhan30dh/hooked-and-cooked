@@ -10,6 +10,8 @@ import crispyDrink from "../images/crispyDrink.png";
 import crispyFries from "../images/crispyFries.png";
 import crispyIconsSetMobile from "../images/crispy_iconsSetMobile.png";
 
+import OrderNow from "../components/ordernow";
+
 const StoryCrispy = () => {
   const parallaxScaleDown = [
     {
@@ -32,46 +34,54 @@ const StoryCrispy = () => {
       properties: [
         {
           startValue: 0,
-        endValue: 1,
-        property: "scale"
+          endValue: 1,
+          property: "scale",
         },
         {
           startValue: -500,
           endValue: 0,
-          property: "translateX"
-          },
+          property: "translateX",
+        },
       ],
     },
   ];
 
   const parallaxOpacity1 = [
     {
-      start: 'self',
+      start: "self",
       duration: 500,
       properties: [
         {
           startValue: 0,
-        endValue: 1,
-        property: "scale"
+          endValue: 1,
+          property: "scale",
         },
         {
-        startValue: 500,
-        endValue: 0,
-        property: "translateY"
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
         },
-        
       ],
     },
   ];
 
   return (
-    <div className="crispy bg-yellow p-1/10 ">
+    <div className="crispy bg-yellow p-1/10 relative ">
+      <div className="  absolute bottom-0 md:bottom-1/20 right-2 md:right-1/10  z-10">
+        <OrderNow />
+      </div>
       <div className="top flex">
         <div className="text md:w-2/3 md:pr-1/10">
-          <Plx parallaxData={parallaxOpacity}  className="  w-1/2 mx-auto md:ml-0">
+          <Plx
+            parallaxData={parallaxOpacity}
+            className="  w-1/2 mx-auto md:ml-0"
+          >
             <img src={soo} alt="soo" />
           </Plx>
-          <Plx parallaxData={parallaxOpacity1}  className="w-full -mt-2 md:-mt-4 md:ml-16">
+          <Plx
+            parallaxData={parallaxOpacity1}
+            className="w-full -mt-2 md:-mt-4 md:ml-16"
+          >
             <img src={crispy} alt="crispy" />
           </Plx>
         </div>
@@ -90,7 +100,7 @@ const StoryCrispy = () => {
               <img src={crispyDrink} alt="crispyDrink" />
             </div>
           </div>
-<div className="start-element"></div>
+          <div className="start-element"></div>
           <div className=" hidden md:block absolute  w-1/4 ml-1/4 -mt-10 z-10">
             <img src={crispyFries} alt="crispyFries" />
           </div>

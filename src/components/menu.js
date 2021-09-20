@@ -7,12 +7,17 @@ import arrow from "../images/menu_doubleArrows.png";
 import Combos from "./menu_combos";
 import Fries from "./menu_sides";
 import Drinks from "./menu_drinks";
+import OrderNow from "../components/ordernow";
+
 
 const Menu = () => {
   return (
     <section className="overflow-hidden   relative menuContainer w-full  bg-yellow" id="menu">
       <div className="topText p-1/10 lg:p-1/20">
-      <div className="top md:flex justify-center">
+      <div className="top md:flex justify-center relative">
+      <div className="  absolute bottom-1/10 md:-bottom-2/5 md:left-0  z-10">
+        <OrderNow />
+      </div>
         <div className=" w-full md:w-1/2 lg:w-1/2 ">
           <img src={areYouReadyToBeHooked} alt="areYouReadyToBeHooked" />
         </div>

@@ -4,6 +4,8 @@ import Plx from "react-plx";
 import MenuTitle from "./menu_title";
 import Slick from "./slick";
 import MenuItem from "./menuItem";
+import OrderNow from "../components/ordernow";
+
 
 //import line from "../images/menuSides_lineFish.svg";
 import LineSlides from "../components/line_sides";
@@ -33,6 +35,9 @@ const Sides = () => {
 
   return (
     <div className="relative  ">
+    <div className="  absolute top-3/4 md:top-1/2 right-1/2  z-10">
+        <OrderNow />
+      </div>
       <MenuTitle title="Sides" reverse="flex-row" />
       <div className="w-full md:flex justify-end md:pr-1/5">
         <div className="slickWrapMobile md:hidden mt-6">
