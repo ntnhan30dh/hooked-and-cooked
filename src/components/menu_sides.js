@@ -4,7 +4,7 @@ import Plx from "react-plx";
 import MenuTitle from "./menu_title";
 import Slick from "./slick";
 import MenuItem from "./menuItem";
-import OrderNow from "../components/ordernow";
+// import OrderNow from "../components/ordernow";
 
 
 //import line from "../images/menuSides_lineFish.svg";
@@ -35,15 +35,17 @@ const Sides = () => {
 
   return (
     <div className="relative  ">
-    <div className="  absolute top-3/4 md:top-1/2 right-1/2  z-10">
+    {/* <div className="  absolute top-3/4 md:top-1/2 right-1/2  z-10">
         <OrderNow />
-      </div>
+      </div> */}
       <MenuTitle title="Sides" reverse="flex-row" />
       <div className="w-full md:flex justify-end md:pr-1/5">
         <div className="slickWrapMobile md:hidden mt-6">
           <Slick>
-            <MenuItem pic="sides1" name="FRIES" />
-            <MenuItem pic="sides1" name="FRIES" />
+          <MenuItem pic="sidesFries" name="FRIES" />
+            <MenuItem pic="sidesColeslaw" name="Coleslaw" />
+            <MenuItem pic="sidesRise" name="Rice" />
+            <MenuItem pic="sidesGarlicMayo" name="Garlic Mayo" />
           </Slick>
         </div>
       </div>
@@ -53,7 +55,7 @@ const Sides = () => {
           <Slick>
             <MenuItem pic="sidesFries" name="FRIES" />
             <MenuItem pic="sidesColeslaw" name="Coleslaw" />
-            <MenuItem pic="sidesRise" name="Rise" />
+            <MenuItem pic="sidesRise" name="Rice" />
             <MenuItem pic="sidesGarlicMayo" name="Garlic Mayo" />
           </Slick>
         </div>

@@ -5,6 +5,8 @@ import btnNext from "../images/menu_btnNext.png";
 import btnPrev from "../images/menu_btnPrev.png";
 
 const Slick = (props) => {
+
+  const arrow = props.arrow === "hidden"?"hidden":""
   //creating the ref
   const customeSlider = useRef();
   const gotoNext = () => {
@@ -55,13 +57,13 @@ const Slick = (props) => {
 
   return (
     <div className={`relative sliderContainer  w-full /md:-mt-10`}>
-      <button onClick={() => gotoNext()} className={`right-3 md:right-0 ${btnStyle}`}>
+      <button onClick={() => gotoNext()} className={`right-3 md:right-0 ${btnStyle} ${arrow} `}>
         <div className={arrowStyle}>
           <img src={btnNext} alt="next" />
         </div>
       </button>
 
-      <button onClick={() => gotoPrev()} className={` left-3 md:left-0 ${btnStyle} `}>
+      <button onClick={() => gotoPrev()} className={` left-3 md:left-0 ${btnStyle} ${arrow}`}>
         <div className={arrowStyle}>
           <img src={btnPrev} alt="prev" />
         </div>

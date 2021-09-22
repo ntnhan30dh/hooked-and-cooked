@@ -35,7 +35,7 @@ const Drinks = () => {
       <div className=" ">
       <MenuTitle title="DRINKS" reverse="flex-row-reverse"/>
       <div className="slickWrapMobile md:hidden  w-3/4  mx-auto mt-6 ">
-      <Slick >
+      <Slick arrow="hidden">
         <MenuItem  pic="drinks1" name="COLA"  />
         <MenuItem
           pic="drinks1"
@@ -45,12 +45,9 @@ const Drinks = () => {
       </div>
       <div className="picsDiv relative  -mt-16 md:mt-16 ">
       <div className="slickWrap hidden md:block absolute w-full md:w-1/3 lg:w-1/4 -top-28  left-1/10">
-      <Slick >
+      <Slick arrow="hidden" >
         <MenuItem  pic="drinks1" name="COLA"  />
-        <MenuItem
-          pic="drinks1"
-          name="COLA"
-        />
+        
       </Slick>
       </div>
       <div className=" hidden md:block w-1/3 ml-1/2">

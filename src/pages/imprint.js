@@ -46,7 +46,7 @@ export default function Home() {
         <h3>Contact</h3>
         <p>
           Phone: +49 (30) 54 44 59 000 <br />
-          Email: hello@yumzadumplings.com
+          Email: hello@hooked-and-cooked.com 
         </p>
         <p>
           Registergericht/district court: Amtsgericht Berlin-Charlottenburg /

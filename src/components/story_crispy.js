@@ -22,6 +22,7 @@ const StoryCrispy = () => {
           startValue: 35,
           endValue: 0,
           property: "translateX",
+
         },
       ],
     },
@@ -65,11 +66,30 @@ const StoryCrispy = () => {
     },
   ];
 
+
+  const parallaxMoveUp = [
+    {
+      start: "self",
+      duration: 500,
+      properties: [
+        {
+          startValue: 50,
+          endValue: -50,
+          property: "translateY",
+          unit: '%',
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="crispy bg-yellow p-1/10 relative ">
-      <div className="  absolute bottom-0 md:bottom-1/20 right-2 md:right-1/10  z-10">
+      <Plx
+        parallaxData={parallaxMoveUp}
+        className="  absolute bottom-0 md:bottom-1/20 right-2 md:right-1/10  z-10"
+      >
         <OrderNow />
-      </div>
+      </Plx>
       <div className="top flex">
         <div className="text md:w-2/3 md:pr-1/10">
           <Plx

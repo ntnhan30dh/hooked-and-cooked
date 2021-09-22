@@ -1,4 +1,5 @@
 import React from "react";
+import Plx from "react-plx";
 
 import areYouReadyToBeHooked from "../images/menu_areYouReadyToBeHooked.png";
 import icons from "../images/menu_shrimpFries.png";
@@ -11,13 +12,30 @@ import OrderNow from "../components/ordernow";
 
 
 const Menu = () => {
+  const parallaxMoveRight = [
+    {
+      start: "self",
+      duration: 500,
+      properties: [
+        {
+          startValue: -25,
+          endValue: 25,
+          property: "translateX",
+          unit: '%',
+        },
+      ],
+    },
+  ];
   return (
     <section className="overflow-hidden   relative menuContainer w-full  bg-yellow" id="menu">
       <div className="topText p-1/10 lg:p-1/20">
       <div className="top md:flex justify-center relative">
-      <div className="  absolute bottom-1/10 md:-bottom-2/5 md:left-0  z-10">
+      <Plx
+        parallaxData={parallaxMoveRight}className="   absolute bottom-1/10 md:-bottom-2/5 md:left-0  z-10">
         <OrderNow />
-      </div>
+      </Plx>
+
+      
         <div className=" w-full md:w-1/2 lg:w-1/2 ">
           <img src={areYouReadyToBeHooked} alt="areYouReadyToBeHooked" />
         </div>
