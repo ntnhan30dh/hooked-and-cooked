@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Modal } from 'semantic-ui-react'
 import CountryList from './countrylist'
-import orderNow from "../images/orderNowBtn.png";
+import orderNow from "../images/orderNowBtn.gif";
 
 const OrderNow = () =>{
   const [open, setOpen] = React.useState(false)
