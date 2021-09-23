@@ -19,7 +19,7 @@ const Menu = () => {
       properties: [
         {
           startValue: -25,
-          endValue: 25,
+          endValue: 20,
           property: "translateX",
           unit: '%',
         },
@@ -31,7 +31,7 @@ const Menu = () => {
       <div className="topText p-1/10 lg:p-1/20">
       <div className="top md:flex justify-center relative">
       <Plx
-        parallaxData={parallaxMoveRight}className="   absolute bottom-1/10 md:-bottom-2/5 md:left-0  z-10">
+        parallaxData={parallaxMoveRight}className="   absolute bottom-1/10 md:-bottom-2/5 xl:-bottom-1/2 md:left-0  z-10">
         <OrderNow />
       </Plx>
 

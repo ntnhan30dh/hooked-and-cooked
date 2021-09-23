@@ -13,7 +13,7 @@ const OrderNow = () =>{
       onOpen={() => setOpen(true)}
       open={open}
       trigger={<Button  >
-      <div className="w-20 sm:w-28 md:w-32 lg:w-48 ">
+      <div className="w-28 sm:w-32 md:w-36 lg:w-52 xl:w-60  ">
         
           <img src={orderNow} alt="orderNow" />
        
