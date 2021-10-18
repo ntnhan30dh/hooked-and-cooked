@@ -1,24 +1,23 @@
-import React, { useState } from "react"
-import Header from "../components/header"
-import FollowUs from "../components/followus"
+import React, { useState } from "react";
+import Header from "../components/header";
+import FollowUs from "../components/followus";
 //import 'semantic-ui-css/semantic.min.css'
 
-import "../styles/index.scss"
+import "../styles/index.scss";
 
 export default function Home() {
   let [menuActive, setmenuActive] = useState(false);
   const toggleMenu = () => {
-		setmenuActive(!menuActive)
-    }
-   
-    
+    setmenuActive(!menuActive);
+  };
+
   return (
     <div className="pageWrapper">
       <head>
-      <title>Hooked and Cooked</title>
+        <title>Hooked and Cooked</title>
       </head>
-    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    <div className="legalInfo-div p-1/10">
+      <Header toggleMenu={toggleMenu} menuState={menuActive} />
+      <div className="legalInfo-div p-1/10">
         <h1>Privacy Policy</h1>
 
         <h2>Privacy Notice</h2>
@@ -215,17 +214,17 @@ export default function Home() {
         </p>
         <h2>Cookie Information</h2>
         <p>
-          In order for your visit to Hooked & Cooked website to be attractive and to enable
-          the use of certain functions, we use the so-called cookies on various
-          pages. Cookies are small text files that are stored in your browser.
-          Some of the cookies we use are deleted after the end of the operation
-          period of your browser, eg. after the closing of the browser. Other
-          cookies remain in your browser and allow us to identify your browser
-          on your next visit (permanent cookies). You can configure your browser
-          so that you are informed about the setting of cookies and decide
-          individually on their acceptance or deviation for specific cases or in
-          general. Non-acceptance of cookies may limit the functionality of our
-          website.
+          In order for your visit to Hooked & Cooked website to be attractive
+          and to enable the use of certain functions, we use the so-called
+          cookies on various pages. Cookies are small text files that are stored
+          in your browser. Some of the cookies we use are deleted after the end
+          of the operation period of your browser, eg. after the closing of the
+          browser. Other cookies remain in your browser and allow us to identify
+          your browser on your next visit (permanent cookies). You can configure
+          your browser so that you are informed about the setting of cookies and
+          decide individually on their acceptance or deviation for specific
+          cases or in general. Non-acceptance of cookies may limit the
+          functionality of our website.
         </p>
         <p>We classify the cookies in three categories:</p>
         <ul>
@@ -259,10 +258,11 @@ export default function Home() {
         <p>
           If you would like to: access, correct, amend or delete any personal
           information we have about you, register a complaint, or simply want
-          more information, please contact us by email at: hello@hooked-and-cooked.com .
+          more information, please contact us by email at:
+          hello@hooked-and-cooked.com .
         </p>
       </div>
-    <FollowUs />
+      <FollowUs />
     </div>
-  )
+  );
 }

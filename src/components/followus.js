@@ -25,11 +25,11 @@ const FollowUs = () => {
           </Link>
         </li>
         <li>
-          <Link to="/privacy " className={li} style={liStyle}>
+        <li>
+          <Link to="/privacy" className={li} style={liStyle}>
           Privacy Policy
           </Link>
         </li>
-        <li>
           <Link to="/disclaimer" className={li} style={liStyle}>
           Disclaimer
           </Link>
